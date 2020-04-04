@@ -1,7 +1,7 @@
 # Hide Keyboard Layout
 
 <img src="./example.png" alt="Hide Keyboard Layout"
-     width="350" height="350" align="right" />
+     width="300" height="300" align="right" />
 
 GNOME Shell extension to hide keyboard layout indicator in status bar.
 
