@@ -1,0 +1,41 @@
+{
+  "name": "hide-keyboard-layout",
+  "private": true,
+  "scripts": {
+    "test": "eslint *.js",
+    "clean": "rimraf autohide-battery@sitnik.ru.zip",
+    "build": "yarn clean && zip autohide-battery@sitnik.ru.zip *.js metadata.json",
+    "local": "./install.sh"
+  },
+  "repository": "ai/hide-keyboard-layout",
+  "author": "Andrey Sitnik <andrey@sitnik.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "@logux/eslint-config": "^36.1.2",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prefer-let": "^1.0.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-unicorn": "^18.0.1",
+    "rimraf": "^3.0.2"
+  },
+  "eslintConfig": {
+    "extends": "@logux/eslint-config",
+    "globals": {
+      "imports": false
+    },
+    "rules": {
+      "no-unused-vars": ["error", {
+        "varsIgnorePattern": "^(init|enable|disable)$"
+      }]
+    },
+    "env": {
+      "node": false
+    }
+  }
+}
