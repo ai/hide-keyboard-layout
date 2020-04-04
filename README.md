@@ -1,6 +1,6 @@
 # Hide Keyboard Layout
 
-<img src="./screenshot.png" alt="Autohide Battery"
+<img src="./example.png" alt="Hide Keyboard Layout"
      width="350" height="350" align="right" />
 
 GNOME Shell extension to hide keyboard layout indicator in status bar.
@@ -13,4 +13,4 @@ GNOME Shell extension to hide keyboard layout indicator in status bar.
 1. Open [Hide Keyboard Layout] on GNOME Shell Extensions site.
 2. Click slider to install extension.
 
-[Autohide Battery]: https://extensions.gnome.org/extension/595/hide-keyboard-layout/
+[Hide Keyboard Layout]: https://extensions.gnome.org/extension/595/hide-keyboard-layout/
