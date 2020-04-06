@@ -2,16 +2,16 @@ const Main = imports.ui.main
 
 let keyboard = Main.panel.statusArea.keyboard
 
-let signalId
+let watching
 
 function enable () {
   keyboard.hide()
-  signalId = keyboard.actor.connect('notify::visible', actor => {
+  watching = keyboard.actor.connect('notify::visible', actor => {
     actor.hide()
   })
 }
 
 function disable () {
-  if (signalId) keyboard.actor.disconnect(signalId)
+  if (watching) keyboard.actor.disconnect(watching)
   keyboard.show()
 }
