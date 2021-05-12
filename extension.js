@@ -1,17 +1,17 @@
-const Main = imports.ui.main;
+const Main = imports.ui.main
 
-let keyboard = Main.panel.statusArea.keyboard;
+let keyboard = Main.panel.statusArea.keyboard
 
-let watching;
+let watching
 
 function enable() {
-  keyboard.hide();
-  watching = keyboard.actor.connect("notify::visible", (actor) => {
-    actor.hide();
-  });
+  keyboard.hide()
+  watching = keyboard.actor.connect('notify::visible', actor => {
+    actor.hide()
+  })
 }
 
 function disable() {
-  if (watching) keyboard.actor.disconnect(watching);
-  keyboard.show();
+  if (watching) keyboard.actor.disconnect(watching)
+  keyboard.show()
 }

@@ -24,6 +24,14 @@
     "prettier": "^2.3.0",
     "rimraf": "^3.0.2"
   },
+  "prettier": {
+    "arrowParens": "avoid",
+    "jsxSingleQuote": false,
+    "quoteProps": "consistent",
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none"
+  },
   "eslintConfig": {
     "extends": "@logux/eslint-config",
     "globals": {
