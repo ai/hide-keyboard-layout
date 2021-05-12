@@ -11,17 +11,17 @@
   "author": "Andrey Sitnik <andrey@sitnik.ru>",
   "license": "MIT",
   "devDependencies": {
-    "@logux/eslint-config": "^36.1.2",
-    "eslint": "^6.8.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jest": "^23.8.2",
+    "@logux/eslint-config": "^45.4.2",
+    "eslint": "^7.26.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prefer-let": "^1.0.1",
-    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-prefer-let": "^1.1.0",
+    "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-security": "^1.4.0",
-    "eslint-plugin-standard": "^4.0.1",
-    "eslint-plugin-unicorn": "^18.0.1",
+    "eslint-plugin-unicorn": "^32.0.1",
+    "prettier": "^2.3.0",
     "rimraf": "^3.0.2"
   },
   "eslintConfig": {
@@ -30,9 +30,12 @@
       "imports": false
     },
     "rules": {
-      "no-unused-vars": ["error", {
-        "varsIgnorePattern": "^(init|enable|disable)$"
-      }]
+      "no-unused-vars": [
+        "error",
+        {
+          "varsIgnorePattern": "^(init|enable|disable)$"
+        }
+      ]
     },
     "env": {
       "node": false
