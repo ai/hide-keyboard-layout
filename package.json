@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "test": "eslint *.js",
-    "clean": "rimraf *.zip",
+    "clean": "rm *.zip",
     "build": "yarn clean && gnome-extensions pack ./",
     "local": "yarn build && gnome-extensions install -f *.zip"
   },
@@ -11,18 +11,13 @@
   "author": "Andrey Sitnik <andrey@sitnik.ru>",
   "license": "MIT",
   "devDependencies": {
-    "@logux/eslint-config": "^45.4.2",
-    "eslint": "^7.26.0",
-    "eslint-config-standard": "^16.0.2",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jest": "^24.3.6",
+    "@logux/eslint-config": "^46.1.0",
+    "eslint": "^8.2.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prefer-let": "^1.1.0",
-    "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-security": "^1.4.0",
-    "eslint-plugin-unicorn": "^32.0.1",
-    "prettier": "^2.3.0",
-    "rimraf": "^3.0.2"
+    "eslint-plugin-prefer-let": "^3.0.1",
+    "eslint-plugin-promise": "^5.1.1"
   },
   "prettier": {
     "arrowParens": "avoid",
