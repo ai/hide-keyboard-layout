@@ -4,5 +4,5 @@
   "url": "https://github.com/ai/hide-keyboard-layout",
   "uuid": "hide-keyboard-layout@sitnik.ru",
   "shell-version": ["3.34", "3.36", "3.38", "40", "41", "42", "43"],
-  "version": 4
+  "version": 5
 }

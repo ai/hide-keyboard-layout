@@ -1,5 +1,8 @@
 # Change Log
 
+## 5
+* Add GNOME 43 support.
+
 ## 4
 * Add GNOME 42 support.
 
