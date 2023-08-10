@@ -1,17 +1,19 @@
-const Main = imports.ui.main
+import { panel } from 'resource:///org/gnome/shell/ui/main.js'
 
-let keyboard = Main.panel.statusArea.keyboard
+let keyboard = panel.statusArea.keyboard
 
-let watching
+export default class HideKeyboardLayoutExtension {
+  watching = null
 
-function enable() {
-  keyboard.hide()
-  watching = keyboard.actor.connect('notify::visible', actor => {
-    actor.hide()
-  })
-}
+  disable() {
+    if (this.watching) keyboard.actor.disconnect(this.watching)
+    keyboard.show()
+  }
 
-function disable() {
-  if (watching) keyboard.actor.disconnect(watching)
-  keyboard.show()
+  enable() {
+    keyboard.hide()
+    this.watching = keyboard.actor.connect('notify::visible', actor => {
+      actor.hide()
+    })
+  }
 }
