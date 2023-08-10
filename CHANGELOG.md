@@ -1,19 +1,22 @@
 # Change Log
 
+## 7
+* Moved to GNOME 45 API.
+
 ## 6
-* Add GNOME 44 support.
+* Added GNOME 44 support.
 
 ## 5
-* Add GNOME 43 support.
+* Added GNOME 43 support.
 
 ## 4
-* Add GNOME 42 support.
+* Added GNOME 42 support.
 
 ## 3
-* Add GNOME 41 support.
+* Added GNOME 41 support.
 
 ## 2
-* Add GNOME 40 support.
+* Added GNOME 40 support.
 
 ## 1
 * Initial release.
