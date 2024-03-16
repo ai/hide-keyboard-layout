@@ -1,5 +1,8 @@
 # Change Log
 
+## 8
+* Added GNOME 46 support.
+
 ## 7
 * Moved to GNOME 45 API.
 
