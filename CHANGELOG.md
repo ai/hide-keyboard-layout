@@ -1,5 +1,8 @@
 # Change Log
 
+## 10
+* Added GNOME 48 support.
+
 ## 9
 * Added GNOME 47 support.
 
