@@ -1,5 +1,8 @@
 # Change Log
 
+## 11
+* Fixed deprecated warning.
+
 ## 10
 * Added GNOME 48 support.
 
