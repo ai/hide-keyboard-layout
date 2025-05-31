@@ -12,7 +12,7 @@ export default class HideKeyboardLayoutExtension {
 
   enable() {
     keyboard.hide()
-    this.#watching = keyboard.connect('notify::visible', actor => {
+    this.#watching = keyboard.connect('notify::visible', () => {
       keyboard.hide()
     })
   }
