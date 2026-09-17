@@ -10,7 +10,6 @@ See also [Autohide Battery].
 
 [Autohide Battery]: https://github.com/ai/autohide-battery/
 
-
 ## Install
 
 1. Open [Hide Keyboard Layout] on GNOME Shell Extensions site.
